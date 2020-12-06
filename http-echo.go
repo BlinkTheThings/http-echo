@@ -1,4 +1,4 @@
-// Command http-echo is an http server for examining request headers sent by http clients.
+// Command http-echo is an HTTP server for examining request headers sent by HTTP clients.
 package main
 
 import (
@@ -13,14 +13,14 @@ import (
 func main() {
 	// override the default usage function
 	flag.Usage = func() {
-		fmt.Println("http-echo is an http server for examining request headers sent by http clients.")
+		fmt.Println("http-echo is an HTTP server for examining request headers sent by HTTP clients.")
 		fmt.Println("\n\tUsage: http-echo [arguments]")
 		fmt.Printf("\nThe arguments are:\n\n")
 		flag.PrintDefaults()
 	}
 
 	// http address argument
-	addr := flag.String("http", ":8000", "http network address")
+	addr := flag.String("http", ":8000", "network address to listen on")
 
 	// parse the arguments
 	flag.Parse()

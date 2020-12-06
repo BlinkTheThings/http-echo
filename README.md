@@ -1,9 +1,9 @@
 # http-echo
-http-echo is an http server for examining request headers sent by http clients.
+http-echo is an HTTP server for examining request headers sent by HTTP clients.
 
 ## Usage
 
-Running `http-echo` with no arguments will start an http server listening on port 8000 on all available interfaces.
+Running `http-echo` with no arguments will start an HTTP server listening on port 8000 on all available network interfaces.
 
 ```text
 $ http-echo

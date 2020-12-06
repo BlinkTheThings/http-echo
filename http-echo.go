@@ -25,7 +25,7 @@ func main() {
 	// parse the arguments
 	flag.Parse()
 
-	// define a handler function that response to requests with a
+	// define a handler function that repsonds to requests with a
 	// JSON object containing the request headers
 	handler := func(w http.ResponseWriter, req *http.Request) {
 
